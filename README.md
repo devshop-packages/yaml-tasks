@@ -17,7 +17,7 @@ The output is rendered in a way to be easier to read, and proper exit code retur
         cd my-composer-project
         composer require devshop/yaml-tasks
 
-2. Create a `tests.yml` file that looks something like this:
+2. Create a `tasks.yml` file that looks something like this:
 
         myproject/php/lint: find src -name '*.php' -print0 | xargs -0 -n1 php -l
         myproject/php/cs: 
@@ -45,7 +45,7 @@ composer global require devshop/yaml-tasks
 To confirm the command is installed, ask for help:
 
 ```bash
-composer yaml-tests --help
+composer yaml-tasks --help
 ```
 
 Or run the `bin/yaml-tasks` command:
